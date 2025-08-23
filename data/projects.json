@@ -14,7 +14,7 @@
       ],
       "links": {
         "demo": "https://ksvirsky.github.io/c-evm-exec",
-        "repo": "#"
+        "repo": ""
       },
       "content": "## Project Overview\n\nThe tool supports the following use-cases:\n - prepare a call to a smart contract in order to debug some issues or quickly get information from a chain;\n - prepare a write call and share it to a desired user (can help in case there is no UI for some operations, or some steps on UI is non-trivial); once the shared url is opened it is enough to connect wallet and execute it;\n - supports multiple chains and allows to specify custom RPC provider;\n - supports human readable ABI together with json-ABI;\n - stores history of requests (in local-storage) in order to re-use them in future;\n\n"
     },
@@ -35,6 +35,24 @@
         "repo": "https://github.com/ksvirsky/payment-escrow"
       },
       "content": "## Project Overview\n\nThis project implements a basic payment escrow functionality, enabling the secure transfer of funds between two parties. The application’s intent is to demonstrate upgradeability approach in smart contracts to support multiple implementations in the factory contract without the necessity of redeploying the entire contract set.\n\n## Demo & Testing on Polygon Amoy\n\nYou can test the contract functionality using a deployed demo UI on the Polygon Amoy testnet:\n\n* **Demo UI:** [https://ksvirsky.github.io/payment-escrow-demo/](https://ksvirsky.github.io/payment-escrow-demo/)\n\n### Deployed Contract Addresses on Polygon Amoy:\n\n* **PaymentEscrowFactory Address:** `0x9a91dCbf35E5a8d929970A1c81aCcAa8875764Ec`\n* **Mock ERC-20 Token Contract:** `0xD629B37f222deDE7e405f2a4aA678C6423e3b9b7`\n\nTo obtain mock tokens for testing:\n* Use the `mint(address, uint)` method on the Mock ERC-20 token contract.\n* **Convenient Minting Tool:** [https://ksvirsky.github.io/c-evm-exec?chainId=80002&address=0xD629B37f222deDE7e405f2a4aA678C6423e3b9b7&signature=mint%28address+a%2C+uint256+amount%29&args=0xYourAddress%2C+1000000000000000000000000&mode=write](https://ksvirsky.github.io/c-evm-exec?chainId=80002&address=0xD629B37f222deDE7e405f2a4aA678C6423e3b9b7&signature=mint%28address+a%2C+uint256+amount%29&args=0xYourAddress%2C+1000000000000000000000000&mode=write)\n    *(Remember to replace `0xYourAddress` in the `args` with your actual Polygon Amoy wallet address when using the tool.)*"
+    },
+    {
+      "id": "p3",
+      "slug": "tg-bot-mgr",
+      "title": "Telegram Bot Manager",
+      "date": "2025-01-01",
+      "summary": "Web application to provide basic chat functionality for Telegram bot",
+      "coverImage": "/tg-bot-mgr_image.png",
+      "tags": [
+        "Telegram",
+        "Web",
+        "Bot"
+      ],
+      "links": {
+        "demo": "https://ksvirsky.github.io/tg-bot-mgr",
+        "repo": ""
+      },
+      "content": "## Project Overview\n\nThis project is a web application that enables Telegram bot account to serve as a chat bot. It monitors Telegram update events and shows messages that are sent to the bot.\nIt supports the following use-cases:\n - shows a chat of user that sent a message;\n - stores all the data to local-storage to provide basic persistence;\n - allows to set auto-replies on user commands;\n - send broadcast messages to all or specified users;\n - supports multiple bot accounts;\n - fetch user info;\n - supports wildcard %username%, %first-name% in replies;\n - dark/light themes.\n\nIt can be used in emergency cases when bot service is not working, but client requests should be handled immediately."
     }
   ]
 }
