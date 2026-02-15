@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Tic Tac Toe favicon">
+  <title>Tic Tac Toe</title>
+  <!-- X in the top-left corner -->
+  <g stroke="#1f6feb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Smaller vertical span centered toward top-left -->
+    <line x1="6" y1="10" x2="26" y2="30" />
+    <line x1="6" y1="30" x2="26" y2="10" />
+  </g>
+
+  <!-- O in the bottom-right corner -->
+  <g stroke="#f97316" stroke-width="6" fill="none">
+    <circle cx="46" cy="46" r="12" />
+  </g>
+</svg>
