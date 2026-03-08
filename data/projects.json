@@ -73,6 +73,26 @@
         "repo": ""
       },
       "content": "## Project Overview\n\n\nIn some cases, a dApp may need to support multiple blockchains. It can be tricky to decide which chains to deploy on first. Generally, the application owner is responsible for deploying the smart contracts to provide support for a new chain. However, for very simple, single-contract deployments, it may be sufficient to allow a user to trustlessly deploy the smart contract themselves.\n\nThe Trustless Deployer is a web application that provides this functionality. Instead of deploying the contracts, the application owner can prepare a deployment configuration and delegate this action to the interested party. Once the party funds a required address with the native token and submits the prepared transaction, the contract address will be known.\n\nThe application has the following features:\n - Prepares a configuration for trustless smart contract deployment.\n - Generates initialization data for a contract constructor to be passed  during deployment.\n - Allows configuration of additional deployment parameters, such as gas price, gas limit, and v, r, s parameters.\n - Prepares and shares a link for future deployment.\n - Calculates and displays the amount of native token required to fund the deployer account and allows to fund the account.\n - Submits a transaction to deploy smart contract."
+    },
+    {
+      "id": "p5",
+      "slug": "tic-tac-toe",
+      "title": "P2P Tic-Tac-Toe",
+      "date": "2026-02-28",
+      "summary": "A serverless, peer-to-peer Tic-Tac-Toe game featuring extended gameplay and direct WebRTC connectivity.",
+      "coverImage": "https://ksvirsky.github.io/tic-tac-toe/favicon.svg",
+      "tags": [
+        "WebRTC",
+        "P2P",
+        "TypeScript",
+        "Networking",
+        "Game Development"
+      ],
+      "links": {
+        "demo": "https://ksvirsky.github.io/tic-tac-toe",
+        "repo": "https://github.com/ksvirsky/tic-tac-toe"
+      },
+      "content": "## Project Overview\n\nThis project is a modern take on the classic Tic-Tac-Toe game, designed to showcase the power of **WebRTC** for direct browser-to-browser communication. Unlike traditional web games that rely on a central server to relay moves, this application establishes a direct data channel between players.\n\n### Key Features\n\n* **Modified Gameplay:** Includes rules for longer or infinite play sessions, moving beyond the traditional 3x3 stalemate-prone grid.\n* **Versatile Modes:** Supports local 2-player matches, a challenging CPU opponent, and network play.\n* **True P2P Connectivity:** Utilizes WebRTC to connect two computers over the internet without intermediate gameplay servers.\n\n### Technical Architecture\n\nThe project uses free **STUN** and signaling services to facilitate the initial 'handshake' between peers. \n\n\n\n> **Note on Connectivity:** This implementation does not include a **TURN** (Traversal Using Relays around NAT) service. While this keeps the project entirely free and serverless for the developer, users behind symmetric NATs or restrictive corporate firewalls may find it difficult to establish a direct connection."
     }
   ]
 }
