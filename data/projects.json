@@ -93,6 +93,25 @@
         "repo": "https://github.com/ksvirsky/tic-tac-toe"
       },
       "content": "## Project Overview\n\nThis project is a modern take on the classic Tic-Tac-Toe game, designed to showcase the power of **WebRTC** for direct browser-to-browser communication. Unlike traditional web games that rely on a central server to relay moves, this application establishes a direct data channel between players.\n\n### Key Features\n\n* **Modified Gameplay:** Includes rules for longer or infinite play sessions, moving beyond the traditional 3x3 stalemate-prone grid.\n* **Versatile Modes:** Supports local 2-player matches, a challenging CPU opponent, and network play.\n* **True P2P Connectivity:** Utilizes WebRTC to connect two computers over the internet without intermediate gameplay servers.\n\n### Technical Architecture\n\nThe project uses free **STUN** and signaling services to facilitate the initial 'handshake' between peers. \n\n\n\n> **Note on Connectivity:** This implementation does not include a **TURN** (Traversal Using Relays around NAT) service. While this keeps the project entirely free and serverless for the developer, users behind symmetric NATs or restrictive corporate firewalls may find it difficult to establish a direct connection."
+    },
+    {
+      "id": "p6",
+      "slug": "rgb-figlet",
+      "title": "rgb/figlet",
+      "date": "2026-08-26",
+      "summary": "An interactive FIGlet generator with configurable three-color gradients and ANSI-colored console output.",
+      "coverImage": "https://ksvirsky.github.io/rgb-figlet/favicon.svg",
+      "tags": [
+        "React",
+        "TypeScript",
+        "FIGlet",
+        "ANSI"
+      ],
+      "links": {
+        "demo": "https://ksvirsky.github.io/rgb-figlet",
+        "repo": "https://github.com/ksvirsky/rgb-figlet"
+      },
+      "content": "## Project Overview\n\n**rgb/figlet** is an interactive FIGlet generator with configurable three-color gradients and ANSI-colored console output."
     }
   ]
 }
